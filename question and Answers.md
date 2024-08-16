@@ -26,3 +26,19 @@ Q)Diffrence between git and github give answer in short
 Git: A distributed version control system that manages and tracks changes in your code locally. It allows you to commit, branch, merge, and roll back changes without needing an internet connection.
 
 GitHub: A web-based platform that hosts Git repositories online, providing collaboration features like pull requests, issue tracking, and project management tools. It’s essentially a social network for coders where you can share your Git repositories with others.
+
+
+
+Q3)What is .git repository and what it consists of after running command "git init"
+A `.git` repository is a hidden directory created by Git when you initialize a new repository with the command `git init`. It stores all the necessary files and information that Git needs to manage the version control for your project.
+
+### After running `git init`, the `.git` directory typically consists of:
+
+1. **HEAD**: A file that points to the current branch reference, usually `master` or `main` by default.
+2. **config**: A file that contains configuration settings for the repository, like user information, remote repositories, and other settings.
+3. **description**: A file that holds a description of the repository. This is used in Git web interfaces and is usually left blank.
+4. **hooks/**: A directory containing sample scripts for various Git hooks. These are scripts that run automatically in response to specific Git events, like committing or pushing.
+5. **info/**: A directory that contains additional information, including an `exclude` file, which works like a global `.gitignore` for that repository.
+6. **objects/**: A directory that stores all the content of your repository, including commits, trees, and blobs. This is where the actual data of your files and their history is kept.
+7. **refs/**: A directory that contains references to commit objects, including branches (`refs/heads/`) and tags (`refs/tags/`).
+These components collectively allow Git to track changes, manage versions, and perform various operations like commits, branching, and merging.
