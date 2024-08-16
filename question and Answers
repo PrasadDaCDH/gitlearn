@@ -1,4 +1,4 @@
-Q)what is difrence between centralize system and distributed system like (CSV and Git)
+Q)what is difference between centralize system and a distributed system like (CSV and Git)
 
 The difference between a centralized system and a distributed system can be illustrated by comparing centralized version control systems (like SVN) and distributed version control systems (like Git). Here’s how they differ:
 
@@ -7,6 +7,7 @@ Single Central Repository: In a centralized system, there is a single central se
 Server Dependency: All operations (like commit, update, and merge) require communication with the central server. If the server is down, most operations cannot be performed.
 Checkout vs. Commit: Developers check out the latest version of the project, work on it locally, and then commit changes back to the central repository. This means that the central repository always has the most up-to-date version of the project.
 Collaboration: Collaboration in a centralized system requires constant access to the central server, and all changes are tracked centrally.
+
 Distributed System (e.g., Git)
 Multiple Repositories: In a distributed system, every developer has their own complete copy of the entire project history. This means that each clone of the repository is a fully functional repository.
 Local Operations: Many operations (like commit, branch, and merge) can be performed locally without needing to communicate with a central server. This makes the system more resilient and allows for offline work.
