@@ -35,3 +35,18 @@ git config --glober user.name "username"
 12>#you need PAT from github to push the repo's to chace it use
 git config --global credential.helper cache/store (store for permanent)
 
+13>#To add a new branch into git
+git checkout -b newbranchname
+
+14>#to switch between branches
+git checkout branchname
+
+15>#to see the commit in online
+git log --oneline
+
+16>#to merge the branches
+git chery-pick thecommitid
+git rebase thecommitname (IT will take effect before the effect of main)
+git merge thecomitname  (IT will take effect after the effect of main)
+
+13
