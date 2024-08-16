@@ -19,4 +19,19 @@ git log
 7>#To change the version to the privious or any commit you want
 git reset --hard COmmit_number
 
-8>#TO share the files 
+8>#To remove file from tracking by git
+git checkout filename
+
+9>To share the file in github
+git push -u orgin main
+
+10>#to add the remote repository is needed to act as origin
+git remote add origin "git URL"
+
+11>#to push first you need to set the name and email for the git
+git config --global user.email "useremailaddress"
+git config --glober user.name "username"
+
+12>#you need PAT from github to push the repo's to chace it use
+git config --global credential.helper cache/store (store for permanent)
+
